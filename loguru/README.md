@@ -2,7 +2,7 @@
 
 This repository contains code related to the Real Python tutorial [How to Use Loguru for Simpler Python Logging](https://realpython.com/python-loguru/).
 
-## Setup environemnt
+## Setup environment
 
 You should first create and activate a virtual environment:
 
@@ -23,6 +23,23 @@ Then you can execute the provided Python scripts, for example:
 ```sh
 (venv) $ python basic_logging.py
 ```
+
+## Rendering Docs
+
+To convert the README.md to html use:
+
+```sh
+pandoc README.md -o README.html
+```
+
+To display the generated html file use:
+
+```sh
+firefox README.html &
+```
+
+
+## References
 
 1. [How to Use Loguru for Simpler Python Logging](https://realpython.com/python-loguru/)
 2. [Loguru](https://loguru.readthedocs.io/en/stable/index.html)

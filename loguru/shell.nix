@@ -6,5 +6,6 @@ in pkgs.mkShell {
       python-pkgs.pandas
       python-pkgs.requests
     ]))
+    pkgs.pandoc
   ];
 }

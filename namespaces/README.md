@@ -45,3 +45,4 @@ firefox README.html &
 2. [Import](https://docs.python.org/3/reference/simple_stmts.html#import)
 3. [Python](https://nixos.wiki/wiki/Python)
 4. [Markdown Guide](https://www.markdownguide.org/)
+5. [Tools To Convert PDF Files to Markdown](https://pdf.wondershare.com/convert-pdf/pdf-to-markdown.html)

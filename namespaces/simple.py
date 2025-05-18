@@ -2,10 +2,14 @@
 # This is main_script.py
 
 import sys
-import os
+# import os
 
 # Import the entire module
-import my_module
+import my_module                        # my_module imported and bound locally
+import foo.bar.baz                      # foo, foo.bar, and foo.bar.baz imported, foo bound locally
+import foo.bar.buz as fbb               # foo, foo.bar, and foo.bar.baz imported, foo.bar.baz bound as fbb
+from utils import doit                  # utils imported and utils.doit bound as doit
+from utils import doit2 as localdoit    # utils imported and utils.doit2 bound as localdoit
 
 x=5 # a local variable
 
@@ -40,3 +44,9 @@ print(module_greet("Bob"))
 # Trying to access the internal helper function (possible but convention suggests not to)
 # my_module._internal_helper()
 
+fbb.func("Calling fbb.func")
+
+# call imported utils functions
+
+doit("Calling function doit in module utils")
+localdoit("Calling function localdoit")

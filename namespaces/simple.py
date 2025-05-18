@@ -5,6 +5,7 @@ import sys
 # import os
 
 # Import the entire module
+from my_package import *
 import my_module                        # my_module imported and bound locally
 import foo.bar.baz                      # foo, foo.bar, and foo.bar.baz imported, foo bound locally
 import foo.bar.buz as fbb               # foo, foo.bar, and foo.bar.baz imported, foo.bar.baz bound as fbb

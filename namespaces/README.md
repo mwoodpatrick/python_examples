@@ -41,6 +41,7 @@ firefox README.html &
 
 ## References
 
+1. [click](https://click.palletsprojects.com/en/stable/)
 1. [click](https://docs.google.com/document/d/1uzLWBVaI9EotwqOt-521bBM5jlpLCbH55fc70lWBK7k/edit?pli=1&tab=t.0)
 1. [Using pip and pyproject.toml](https://gemini.google.com/share/ca70de5996e0)
 1. [import click using pyproject.toml](https://docs.google.com/document/d/1cejOZYgWVBocAskS2ziipkA71OpUXNscpYaFQ7vdzSE/edit?tab=t.0)

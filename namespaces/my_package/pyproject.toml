@@ -101,3 +101,43 @@
 #     ```
 # 
 # In summary, `pyproject.toml` is the modern, standardized file for configuring Python projects, encompassing build system requirements, project metadata, and the settings for various development tools. It promotes consistency and simplifies project setup and management.
+
+
+[project]
+name = "my_package"
+version = "0.1.0"
+description = "Example Package"
+readme = "README.md"
+requires-python = ">=3.10"
+
+# Minimum support version for packages - ubuntu 22.04
+# https://launchpad.net/ubuntu/jammy/+package/python3-<package-name>
+dependencies = [
+    "requests>=2.25",
+    "rich>=13.9.4", 
+    "toml>=0.10.2",
+    "click>=8.0.3",
+]
+
+license = {text = "MIT"}
+
+classifiers = [
+    "Private :: Do not Upload"
+]
+
+[project.scripts]
+example-cli = "example:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "hatch>=1.13.0",
+    "mypy>=1.13.0",
+    "pytest>=8.3.3",
+    "ruff>=0.8.0",
+    "types-requests>=2.32.0.20241016",
+    "types-toml>=0.10.8.20240310",
+]

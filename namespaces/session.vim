@@ -19,18 +19,19 @@ badd +2 foo/bar/baz.py
 badd +7 foo/bar/buz.py
 badd +4 foo/bar/__init__.py
 badd +46 utils.py
-badd +49 README.md
-badd +91 my_package/__init__.py
+badd +1 README.md
+badd +68 my_package/__init__.py
 badd +10 my_package/module_a.py
 badd +1 my_package
 badd +7 my_package/module_b.py
-badd +1 my_package/pyproject.toml
+badd +143 my_package/pyproject.toml
+badd +118 my_package/cli.py
 argglobal
 %argdel
 $argadd my_module.py
 edit my_package/pyproject.toml
 argglobal
-balt my_package/__init__.py
+balt my_package/cli.py
 setlocal foldmethod=manual
 setlocal foldexpr=0
 setlocal foldmarker={{{,}}}
@@ -41,11 +42,11 @@ setlocal foldnestmax=20
 setlocal foldenable
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 103 - ((25 * winheight(0) + 14) / 28)
+let s:l = 1 - ((0 * winheight(0) + 14) / 28)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 103
+keepjumps 1
 normal! 0
 lcd /mnt/wsl/projects/git/python_examples/namespaces
 tabnext 1

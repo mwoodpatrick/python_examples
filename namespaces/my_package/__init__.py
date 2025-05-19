@@ -65,6 +65,7 @@ __license__ = "MIT"
 # These imports make the specified names available directly under the package namespace
 from .module_a import function_x, ClassY
 from .module_b import MY_CONSTANT
+from .cli import app
 
 
 # --- Define __all__ for wildcard imports ---
@@ -77,6 +78,8 @@ __all__ = [
     "function_x",
     "ClassY",
     "MY_CONSTANT",
+    "app"
+
     # Note: 'another_function' from module_b is NOT included in __all__,
     # so it won't be imported with 'from my_package import *'
     # but can still be imported directly like 'from my_package.module_b import another_function'
